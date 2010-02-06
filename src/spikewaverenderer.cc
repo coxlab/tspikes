@@ -214,7 +214,7 @@ void SpikeWaveRenderer::render()
     }
     //glString_.drawWinText(4, y-35, "Filter : 6 kHz", 10); 
     glString_.drawWinText(4, y-35, 
-              boost::str(boost::format("Range %s-%s") % Voltage(ampMin_).str()) % Voltage(ampMax_).str(), 10)
+      boost::str(boost::format("Range %s-%s") % Voltage(ampMin_).str() % Voltage(ampMax_).str()), 10);
     
     glString_.drawWinText(4, y-45, 
 			  boost::str(boost::format("Thold: %s") % Voltage(channelState_.threshold).str()), 10); 
